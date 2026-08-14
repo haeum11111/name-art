@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>감성 이름 타이포그래피 생성기</title>
   
-  <!-- 구글 폰트 로드 -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Do+Hyeon&family=East+Sea+Dokdo&family=Gowun+Batang:wght@700&family=Jua&family=Nanum+Pen+Script&family=Song+Myung&family=Sunflower:wght@700&display=swap" rel="stylesheet">
@@ -17,11 +16,10 @@
   <div class="app-container">
     <header>
       <h1>✨ 감성 이름 타이포그래피</h1>
-      <p>이름과 뜻을 입력하고 생성 버튼을 누르면 모션과 함께 디자인이 완성됩니다.</p>
+      <p>정보를 입력하고 생성 버튼을 누르면 스르륵 모션과 함께 연출됩니다.</p>
     </header>
 
     <main class="content-wrapper">
-      <!-- 입력 컨트롤 패널 -->
       <section class="control-panel">
         <div class="form-group">
           <label for="nameInput">이름</label>
@@ -50,15 +48,13 @@
 
         <div class="analysis-box">
           <span>분석된 스타일: </span>
-          <strong id="detectedStyle">버튼을 눌러 디자인을 생성하세요!</strong>
+          <strong id="detectedStyle">아래 버튼을 눌러 모션을 시작하세요!</strong>
         </div>
 
-        <!-- 메인 생성 및 모션 버튼 -->
         <button id="renderBtn" class="primary-btn">✨ 타이포그래피 생성하기 (모션)</button>
         <button id="downloadBtn" class="secondary-btn">이미지 저장하기 (.png)</button>
       </section>
 
-      <!-- 캔버스 미리보기 영역 -->
       <section class="preview-panel">
         <canvas id="mainCanvas" width="800" height="800"></canvas>
       </section>
