@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>나만의 이름 타이포그래피</title>
+  <title>이름 타이포그래피 생성</title>
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,20 +15,21 @@
 
   <div class="app-container">
     <header>
-      <h1>✨ 나만의 이름 타이포그래피</h1>
-      <p>이름과 뜻/성향을 입력하고 생성 버튼을 누르면 스르륵 모션과 함께 연출됩니다.</p>
+      <h1>✨ 이름 타이포그래피 생성</h1>
+      <p>이름과 뜻/성향을 입력하고 생성 버튼을 누르면 실시간 붓 드로잉 모션이 실행됩니다.</p>
     </header>
 
     <main class="content-wrapper">
       <section class="control-panel">
         <div class="form-group">
           <label for="nameInput">이름</label>
-          <input type="text" id="nameInput" placeholder="예: 박하음" value="박하음">
+          <!-- value를 제거하고 placeholder만 남겨 바로 입력 가능하도록 수정 -->
+          <input type="text" id="nameInput" placeholder="예: 박하음">
         </div>
 
         <div class="form-group">
           <label for="meaningInput">이름의 뜻 또는 성향</label>
-          <input type="text" id="meaningInput" placeholder="예: 하나님의 음성을 듣는 사람" value="하나님의 음성을 듣는 사람">
+          <input type="text" id="meaningInput" placeholder="예: 하나님의 음성을 듣는 사람">
         </div>
 
         <div class="color-picker-group">
@@ -64,3 +65,4 @@
   <script src="script.js"></script>
 </body>
 </html>
+
